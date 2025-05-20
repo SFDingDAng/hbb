@@ -29,7 +29,7 @@ jobs:
       - name: Modify src/config.rs
         run: |
           # 替换RENDEZVOUS_SERVERS
-          sed -i 's|^.*RENDEZVOUS_SERVERS.*=.*&\["rs-ny.rustdesk.com"\].*$|pub const RENDEZVOUS_SERVERS: &[&str] = &["rustdesk.dp0.cc"];|' src/config.rs
+          sed -i '/RENDEZVOUS_SERVERS:/c\    pub const RENDEZVOUS_SERVERS: &[&str] = &["rustdesk.dp0.cc"];' src/config.rs
           
           # 替换RS_PUB_KEY
           sed -i 's|OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=|gLTXUu5FCukGozY0Hj1ELhCKqGoxStgSXqVCTUk0tyk=|g' src/config.rs
