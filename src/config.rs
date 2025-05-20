@@ -98,7 +98,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"]["rustdesk.dp0.cc"];
+pub const RENDEZVOUS_SERVERS: pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"]["rustdesk.dp0.cc"];[pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"]["rustdesk.dp0.cc"];str] = pub const RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"]["rustdesk.dp0.cc"];["rustdesk.dp0.cc"];
 pub const RS_PUB_KEY: &str = "gLTXUu5FCukGozY0Hj1ELhCKqGoxStgSXqVCTUk0tyk=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
